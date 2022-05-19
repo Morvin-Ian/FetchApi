@@ -1,18 +1,16 @@
 import React from 'react'
+import ListSingleData from './ListSingleData';
+
 
 const Datalist = ({items}) => {
     return (
-        <div>
             <ul>
                 {items.map((item)=>(
 
-                    <li key={item.id}>
-                        {item.title}
-                    </li>
+                  <ListSingleData item={item}/>
 
                 ))}
             </ul>
-        </div>
     )
 }
 
